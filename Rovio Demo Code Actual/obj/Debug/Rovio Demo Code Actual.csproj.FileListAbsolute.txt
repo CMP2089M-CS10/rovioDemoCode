@@ -1,0 +1,6 @@
+c:\users\connor\documents\visual studio 2013\Projects\Rovio Demo Code Actual\Rovio Demo Code Actual\bin\Debug\Rovio Demo Code Actual.exe.config
+c:\users\connor\documents\visual studio 2013\Projects\Rovio Demo Code Actual\Rovio Demo Code Actual\obj\Debug\Rovio Demo Code Actual.csprojResolveAssemblyReference.cache
+c:\users\connor\documents\visual studio 2013\Projects\Rovio Demo Code Actual\Rovio Demo Code Actual\bin\Debug\Rovio Demo Code Actual.exe
+c:\users\connor\documents\visual studio 2013\Projects\Rovio Demo Code Actual\Rovio Demo Code Actual\bin\Debug\Rovio Demo Code Actual.pdb
+c:\users\connor\documents\visual studio 2013\Projects\Rovio Demo Code Actual\Rovio Demo Code Actual\obj\Debug\Rovio Demo Code Actual.exe
+c:\users\connor\documents\visual studio 2013\Projects\Rovio Demo Code Actual\Rovio Demo Code Actual\obj\Debug\Rovio Demo Code Actual.pdb

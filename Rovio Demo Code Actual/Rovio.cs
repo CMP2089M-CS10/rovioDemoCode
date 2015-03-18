@@ -1120,10 +1120,10 @@ namespace Rovio
             /// Collect a camera image (in a Bitmap format)
             /// </summary>
             /// <returns>Bitmap image</returns>
-            public Bitmap GetImage()
-            {
-                return new Bitmap(robot.StreamRequest("Jpeg/CamImg0000.jpg"));
-            }
+            //public Bitmap GetImage()
+            //{
+              //  return new Bitmap(robot.StreamRequest("Jpeg/CamImg0000.jpg"));
+            //}
         }
 
         /// <summary>
@@ -1203,7 +1203,7 @@ namespace Rovio
             /// <summary>
             /// Set server time zone and time.
             /// Sec1970 - seconds since "00:00:00 1/1/1970".
-            /// TimeZone – Time zone in minutes. (e.g. Beijing is GMT+08:00, TimeZone = -480)
+            /// TimeZone ï¿½ Time zone in minutes. (e.g. Beijing is GMT+08:00, TimeZone = -480)
             /// 
             /// \todo Implement with DateTime input parameter.
             /// </summary>
@@ -1229,10 +1229,10 @@ namespace Rovio
             /// date - date
             /// ver - version
             /// pos:
-            /// 0 – top left
-            /// 1 – top right
-            /// 2 – bottom left
-            /// 3 – bottom right
+            /// 0 ï¿½ top left
+            /// 1 ï¿½ top right
+            /// 2 ï¿½ bottom left
+            /// 3 ï¿½ bottom right
             /// 
             /// \todo Implement the enum input parameters.
             /// </summary>
@@ -1309,14 +1309,14 @@ namespace Rovio
 
             /// <summary>
             /// Set dyndns.org service
-            /// Service – DDNS service provider
-            /// User – username
-            /// Pass – password
-            /// IP – IP address (null for auto detect)
-            /// Proxy – name of the proxy
-            /// ProxyPort – port of the proxy
-            /// ProxyUser – username of the proxy
-            /// ProxyPass – password of the proxy
+            /// Service ï¿½ DDNS service provider
+            /// User ï¿½ username
+            /// Pass ï¿½ password
+            /// IP ï¿½ IP address (null for auto detect)
+            /// Proxy ï¿½ name of the proxy
+            /// ProxyPort ï¿½ port of the proxy
+            /// ProxyUser ï¿½ username of the proxy
+            /// ProxyPass ï¿½ password of the proxy
             /// 
             /// Set the account for dyndns.org. To connect the dyndns server, 
             /// if HTTP proxy is required, set the Proxy relative value, 
@@ -1338,7 +1338,7 @@ namespace Rovio
             /// Get DDNS settings.
             /// 
             /// Each line represents an item, and every item is in the format as Name = Value. (
-            /// Refer to SetDDNS.cgi) Return information represent by “Info” should be one of the following values: 
+            /// Refer to SetDDNS.cgi) Return information represent by ï¿½Infoï¿½ should be one of the following values: 
             /// Updated Updating Failed Updating IP Checked Not Update
             /// </summary>
             public string GetDDNS()
@@ -1415,10 +1415,10 @@ namespace Rovio
             /// <summary>
             /// Configure email for sending IPCam images.
             /// 
-            /// Enable – Ignored
+            /// Enable ï¿½ Ignored
             /// MailServer - mail server address
-            /// Sender - sender’s email address
-            /// Receiver - receiver’s email address, multi-receivers separated by ‘;’
+            /// Sender - senderï¿½s email address
+            /// Receiver - receiverï¿½s email address, multi-receivers separated by ï¿½;ï¿½
             /// Subject - subject of email
             /// User - user name for logging into the MailServer
             /// PassWord - password for logging into the MailServer
@@ -1487,7 +1487,7 @@ namespace Rovio
             }
 
             /// <summary>
-            /// Get Rovio’s system logs information.
+            /// Get Rovioï¿½s system logs information.
             /// </summary>
             public string GetLog()
             {
@@ -1495,7 +1495,7 @@ namespace Rovio
             }
 
             /// <summary>
-            /// Get Rovio’s base firmware version.
+            /// Get Rovioï¿½s base firmware version.
             /// Rovio also has a UI version and a NS2 version this function only get the base OS version.
             /// </summary>
             public string GetVer()
@@ -1547,8 +1547,8 @@ namespace Rovio
             /// <summary>
             /// Set the media format.
             /// 
-            /// Audio = 0 – 4
-            /// Video = 0 – 1
+            /// Audio = 0 ï¿½ 4
+            /// Video = 0 ï¿½ 1
             /// </summary>
             public void SetMediaFormat(string audio, string video)
             {
@@ -1559,15 +1559,15 @@ namespace Rovio
             /// Get the media format.
             /// 
             /// Audio
-            /// 0 – AMR
-            /// 1 – PCM
-            /// 2 – IMAADPCM
-            /// 3 – ULAW
-            /// 4 – ALAW
+            /// 0 ï¿½ AMR
+            /// 1 ï¿½ PCM
+            /// 2 ï¿½ IMAADPCM
+            /// 3 ï¿½ ULAW
+            /// 4 ï¿½ ALAW
             /// 
             /// Video
-            /// 1 – H263
-            /// 2 – MPEG4
+            /// 1 ï¿½ H263
+            /// 2 ï¿½ MPEG4
             /// </summary>
             public string GetMediaFormat()
             {
@@ -1865,7 +1865,7 @@ namespace Rovio
     /// </summary>
     public class Camera : Component
     {
-        Bitmap image;
+        //Bitmap image;
         API.Camera.HeadPosition head_position;
         API.Camera.ImageResolution resolution;
         API.Camera.ImageCompression image_compression;
@@ -1919,20 +1919,20 @@ namespace Rovio
         /// </summary>
         public void UpdateImage()
         {
-            image = robot.API.Camera.GetImage();
+        //    image = robot.API.Camera.GetImage();
         }
 
         /// <summary>
         /// The latest image from the camera.
         /// </summary>
-        public Bitmap Image
+       /* public Bitmap Image
         {
             get 
             {
                 if (AutoUpdate) UpdateImage();
                 return image;
             }
-        }
+        }*/
 
         /// <summary>
         /// Camera head position.
