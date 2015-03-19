@@ -28,34 +28,34 @@ namespace Rovio_Demo_Code_Actual
                         {
                             robot.Drive.Forward(30);
                         }
-                        for (int i = 0; i < 15; i++)
+                        for (int i = 0; i < 16; i++)
                         {
-                            robot.Drive.RotateLeft(90);
+                            robot.Drive.RotateLeft(20);
                         }
                         
                         for (int i = 0; i < 40; i++)
                         {
                             robot.Drive.Forward(30);
                         }
-                        for (int i = 0; i < 15; i++)
+                        for (int i = 0; i < 16; i++)
                         {
-                            robot.Drive.RotateLeft(90);
+                            robot.Drive.RotateLeft(20);
                         }
                         for (int i = 0; i < 80; i++)
                         {
                             robot.Drive.Forward(30);
                         }
-                        for (int i = 0; i < 15; i++)
+                        for (int i = 0; i < 16; i++)
                         {
-                            robot.Drive.RotateLeft(90);
+                            robot.Drive.RotateLeft(20);
                         }
                         for (int i = 0; i < 40; i++)
                         {
                             robot.Drive.Forward(30);
                         }
-                        for (int i = 0; i < 15; i++)
+                        for (int i = 0; i < 16; i++)
                         {
-                            robot.Drive.RotateLeft(90);
+                            robot.Drive.RotateLeft(20);
                         }
 
                     }
@@ -64,9 +64,9 @@ namespace Rovio_Demo_Code_Actual
                     finish = false;
                 else if (input == "test")
                 {
-                    for (int i = 0; i < 100; i++)
+                    for (int i = 0; i < 13; i++)
                     {
-                        robot.Drive.Forward(30);
+                        robot.Drive.RotateLeft(20);
                     }
                 }
                 else
