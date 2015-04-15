@@ -69,8 +69,36 @@ namespace Rovio_Demo_Code_Actual
                         robot.Drive.RotateLeft(20);
                     }
                 }
+                else if (input == "forward")
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        robot.Drive.Forward(20);
+                    }
+                }
+                else if (input == "reverse")
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        robot.Drive.Backward(20);
+                    }
+                }
+                else if (input == "left")
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        robot.Drive.StraightLeft(20);
+                    }
+                }
+                else if (input == "right")
+                {
+                    for (int i = 0; i < 10; i++)
+                    {
+                        robot.Drive.StraightRight(20);
+                    }
+                }
                 else
-                    Console.WriteLine("Please enter either go or stop");
+                    Console.WriteLine("Please enter either go, foreward, reverse, left, right or stop");
 
             }
         }
